@@ -8,20 +8,13 @@
     
     <url>
         <loc>http://yoursite-url/tags/</loc>
-        <lastmod>2020-06-17T07:50:01.963Z</lastmod>
+        <lastmod>2020-06-17T10:55:11.131Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>http://yoursite-url/about/</loc>
-        <lastmod>2020-06-17T07:50:01.935Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>http://yoursite-url/archive/</loc>
         <lastmod>2020-06-17T07:50:01.935Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
