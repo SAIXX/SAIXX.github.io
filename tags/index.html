@@ -14,7 +14,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          魔盒 - Gulfs
+          tags - Gulfs
         
     </title>
 
@@ -88,7 +88,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
                     <div class="site-heading">
-                        <h1>魔盒</h1>
+                        <h1>tags</h1>
                         <!--<hr class="small">-->
                         <span class="subheading">打开魔盒的人，似乎源于某种原因都消失了（可能到了另外的世界）</span>
                     </div>
@@ -150,7 +150,7 @@
 
                         
                         <li>
-                            <a href="/tags/">魔盒</a>
+                            <a href="/tags/">tags</a>
                         </li>
                         
                     
@@ -196,177 +196,74 @@
     <!-- Main Content -->
 <div class="container">
     <div class="row">
-        
-
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- 标签云 -->
+            <div id='tag_cloud' class="tags">
                 
-
-                <!-- 如果开启评论功能 -->
+                    <a href="#Hexo" title="Hexo" rel="1">Hexo</a>
                 
-                    <hr>
-
-                    
-
-                    
-                    <!-- disqus 评论框 start -->
-                    <div class="comment">
-                        <div id="disqus_thread" class="disqus-thread"></div>
-                    </div>
-                    <!-- disqus 评论框 end -->
-                    
-
-
-                    
-
-                    
-                    <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-                    <script type="text/javascript">
-                        /* * * CONFIGURATION VARIABLES * * */
-                        var disqus_shortname = "your-disqus-ID";
-                        var disqus_identifier = "http://yoursite-url/tags/index.html";
-                        var disqus_url = "http://yoursite-url/tags/index.html";
-
-                        (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-
-                        
-                    </script>
-                    <!-- disqus 公共JS代码 end -->
-                    
+                    <a href="#Blog" title="Blog" rel="1">Blog</a>
                 
             </div>
 
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Featured Tags -->
-
-<section>
-    <!-- no hr -->
-    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-    <div class="tags">
-        
-            
-        
-            
-        
-    </div>
-</section>
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">ABOUT ME</a></h5>
-    <div class="short-about">
-
-        
-            <img id = "avatar_pic" src="/img/griffith.png" />
-        
-
-        
-            <p>Hi, It&#39;s saixx</p>
-        
-
-        <!-- SNS Link -->
-        <ul class="list-inline">
-            
-            
-            
+            <!-- 标签列表 -->
 
             
-
-            
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/YenYuHsuan">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                        </span>
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="Hexo">
+                    <span class="tag-text">Hexo</span>
+                </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2017/03/18/hexo-theme-beantech/">
+                        <h2 class="post-title">
+                            [Hexo] Theme BeanTech
+                        </h2>
+                        
+                            <h3 class="post-subtitle">
+                                This is hexo theme Demo.
+                            </h3>
+                        
                     </a>
-                </li>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+            </div>
             
-
-            
-                <li>
-                    <a target="_blank"  href="https://github.com/YenYuHsuan">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="Blog">
+                    <span class="tag-text">Blog</span>
+                </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2017/03/18/hexo-theme-beantech/">
+                        <h2 class="post-title">
+                            [Hexo] Theme BeanTech
+                        </h2>
+                        
+                            <h3 class="post-subtitle">
+                                This is hexo theme Demo.
+                            </h3>
+                        
                     </a>
-                </li>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+            </div>
             
-            
-            
-            
-                <li>
-                    <a target="_blank"  href="https://www.linkedin.com/in/yu-hsuan-yen">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-        </ul>
-    </div>
-</section>
-        <hr>
-    
-        
-  <h5>RECENT POSTS</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/2017/03/18/hexo-theme-beantech/">[Hexo] Theme BeanTech</a>
-        </li>
-      
-    </ul>
-  </div>
 
-        <hr>
-    
-        <!-- Friends Blog -->
 
-<h5>FRIENDS</h5>
-<ul class="list-inline">
-
-    
-        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
-    
-        <li><a href="http://blog.kaijun.rocks" target="_blank">Kaijun&#39;s Blog</a></li>
-    
-        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
-    
-        <li><a href="#" target="_blank">It Helps SEO</a></li>
-    
-</ul>
-
-        <hr>
-    
-</div>
-
-        
+        </div>
     </div>
 </div>
 
