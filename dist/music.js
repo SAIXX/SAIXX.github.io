@@ -1,25 +1,22 @@
-t ap = new APlayer({
+const ap = new APlayer({
     container: document.getElementById('aplayer'),
-    fixed: true,
     autoplay: false,
+    loop: 'all',
+    volume: 0.7,
+    listFolded: true,
+    listMaxHeight: 60,
     audio: [
-      {
-        name: "PDD洪荒之力",
-        artist: '徐梦圆',
-        url: 'http://up.mcyt.net/?down/39868.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/84.jpg',
-      },
-      {
-        name: '9420',
-        artist: '麦小兜',
-        url: 'http://up.mcyt.net/?down/45967.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/8.jpg',
-      },
-      {
-        name: '风筝误',
-        artist: '刘珂矣',
-        url: 'http://up.mcyt.net/?down/46644.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/96.jpg',
-      }
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+        }
     ]
 });
