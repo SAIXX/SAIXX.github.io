@@ -59,6 +59,8 @@
 
     <!-- ga & ba script hoook -->
     <script></script>
+<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 
@@ -213,9 +215,26 @@
 <script type="text/javascript" src="/dist/APlayer.min.js"></script>
 <script type="text/javascript" src="/dist/music.js"></script>
 
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (picture.jpg)");
-			</script>
+        <div id="aplayer-TpUBCphy" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-TpUBCphy"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "Caffeine",
+              author: "Jeff Williams",
+              url: "约束.mp3",
+              pic: "/2020/06/19/musictest/Gulfs.png",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
 <p>With lyrics</p>
 
                 
