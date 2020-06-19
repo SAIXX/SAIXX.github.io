@@ -3,7 +3,7 @@ const ap = new APlayer({
     audio: [{
         name: 'name',
         artist: 'artist',
-        url: '/musictest/约束.mp3',
+        url: 'url.mp3',
         cover: 'cover.jpg'
     }]
-});;
+});
