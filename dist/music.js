@@ -1,31 +1,32 @@
 const ap = new APlayer({
-    container: document.getElementById('aplayer'),
-    fixed: true,
+    container: document.getElementById('player'),
+    mini: false,
     autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'random',
+    preload: 'auto',
+    volume: 0.7,
+    mutex: true,
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
     audio: [
-      {
-        name: "你一定要幸福",
-        artist: '简弘亦',
-        url: 'http://www.ytmp3.cn/down/51689.mp3',
-        cover: 'http://img.ytmp3.cn/image/52.jpg',
-      },
-      {
-        name: '一百万个可能(Live)',
-        artist: '摩登兄弟',
-        url: 'http://www.ytmp3.cn/down/52772.mp3',
-        cover: 'http://img.ytmp3.cn/image/53.jpg',
-      },
-      {
-        name: 'The Rose',
-        artist: 'Westlife',
-        url: 'http://www.ytmp3.cn/down/56694.mp3',
-        cover: 'http://img.ytmp3.cn/image/51.jpg',
-      },
-      {
-        name: 'In The Eyes',
-        artist: '江映东',
-        url: 'http://www.ytmp3.cn/down/53053.mp3',
-        cover: 'http://img.ytmp3.cn/image/10.jpg',
-      }
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+            lrc: 'lrc1.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
     ]
 });
