@@ -59,8 +59,6 @@
 
     <!-- ga & ba script hoook -->
     <script></script>
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
-<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 
@@ -215,26 +213,9 @@
 <script type="text/javascript" src="/dist/APlayer.min.js"></script>
 <script type="text/javascript" src="/dist/music.js"></script>
  
-        <div id="aplayer-VUfueNYH" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-VUfueNYH"),
-            narrow: false,
-            autoplay: false,
-            showlrc: false,
-            music: {
-              title: "Caffeine",
-              author: "Jeff Williams",
-              url: "约束.mp3",
-              pic: "/2020/06/19/musictest/Gulfs.png",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
+			<script>
+				console.error("Error: [hexo-tag-aplayer] Unrecognized tag argument(2): autoplay=false");
+			</script>
 
                 
 
