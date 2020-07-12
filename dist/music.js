@@ -9,7 +9,7 @@ const ap = new APlayer({
         {
             name: 'no future',
             artist: 'no future',
-            url: 'http://www.saixx.cn/2020/07/09/1.mp3',
+            url: 'http://www.saixx.cn/2020/07/09/2.mp3',
             cover: 'cover1.jpg',
         }
     ]
